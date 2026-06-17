@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Kamiti Vault</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #273F4F;
+            --primary-light: #4A7FA5;
+            --accent: #10b981;
+            --bg-body: #F9FAFB;
+            --text-main: #111827;
+            --text-muted: #4B5563;
+            --text-light: #6B7280;
+            --white: #ffffff;
+            --border: #E5E7EB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, #1a2a35 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top right, rgba(74, 127, 165, 0.2) 0%, transparent 60%);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .app-name {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .last-updated {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Main Content Container */
+        .container {
+            max-width: 900px;
+            margin: -40px auto 40px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .content-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(229, 231, 235, 0.5);
+        }
+
+        /* Typography within content */
+        h2 {
+            font-size: 1.75rem;
+            color: var(--primary);
+            margin: 40px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--bg-body);
+            font-weight: 600;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: var(--text-main);
+            margin: 25px 0 10px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        /* Glassmorphism Highlight Box */
+        .highlight-box {
+            background: rgba(39, 63, 79, 0.03);
+            border-left: 4px solid var(--primary-light);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin: 30px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--bg-body);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-email {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: var(--primary);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-email:hover {
+            background: var(--primary-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 127, 165, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header {
+                padding: 60px 20px;
+            }
+            .header h1 {
+                font-size: 2.2rem;
+            }
+            .content-card {
+                padding: 30px 20px;
+            }
+            .container {
+                margin-top: -20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <span class="app-name">Kamiti Vault by Jabiru Labs</span>
+            <h1>Privacy Policy</h1>
+            <p class="last-updated">Last Updated: June 17, 2026</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-card">
+            
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>Kamiti Vault</strong>, a mobile application developed by <strong>Jabiru Labs</strong>. We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App"), strictly adhering to the requirements set forth by the Google Play Store.</p>
+            <p>By using Kamiti Vault, you agree to the collection and use of information in accordance with this policy.</p>
+
+            <h2>2. Information We Collect</h2>
+            <p>To provide you with a seamless and secure experience managing your Kamiti (committee) groups, we collect the following types of information:</p>
+            
+            <h3>A. Personal Information</h3>
+            <p>When you register for an account, we collect personally identifiable information that can be used to contact or identify you, including:</p>
+            <ul>
+                <li><strong>Name:</strong> To display your identity within your Kamiti groups.</li>
+                <li><strong>Email Address & Phone Number:</strong> Used for account authentication, communication, and inviting you to Kamiti groups.</li>
+            </ul>
+
+            <h3>B. User-Generated Content</h3>
+            <p>We collect data you create within the App to facilitate its core functionality:</p>
+            <ul>
+                <li><strong>Kamiti Group Details:</strong> Group names, custom rules, payment amounts, and round frequencies.</li>
+                <li><strong>Member Associations:</strong> Contacts you add to your groups.</li>
+                <li><strong>Payment & Round History:</strong> Records of payment rounds, spin wheel results, and payout tracking.</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Important Note on Financial Data:</strong> Kamiti Vault is a management and tracking tool. We do <strong>NOT</strong> collect, store, or process any bank account details, credit/debit card numbers, or direct financial transactions.</p>
+            </div>
+
+            <h3>C. Device Permissions</h3>
+            <p>The App requests the following permissions to function correctly:</p>
+            <ul>
+                <li><strong>Internet Access:</strong> Required to sync data securely with our cloud database (Google Firestore) in real-time.</li>
+                <li><strong>Vibration:</strong> Used to provide haptic feedback for a better user experience (e.g., during the Spin Wheel animation).</li>
+            </ul>
+
+            <h2>3. How We Use Your Information</h2>
+            <p>We use the collected data for various purposes, directly related to providing and improving our services:</p>
+            <ul>
+                <li>To create and maintain your Kamiti Vault account.</li>
+                <li>To enable the creation, management, and tracking of your Kamiti groups.</li>
+                <li>To facilitate the random "Spin Wheel" functionality and record accurate payment histories.</li>
+                <li>To allow group administrators (creators) to manage members effectively.</li>
+                <li>To provide customer support and respond to your inquiries.</li>
+            </ul>
+
+            <h2>4. Data Sharing and Disclosure</h2>
+            <p>We respect your privacy and <strong>do not sell, rent, or trade your personal information</strong> to third parties for marketing or advertising purposes.</p>
+            <p>Your data is only shared in the following limited circumstances:</p>
+            <ul>
+                <li><strong>Within Your Kamiti Groups:</strong> Your name and contact information are visible to the administrator of any Kamiti group you join to facilitate communication.</li>
+                <li><strong>Service Providers:</strong> We use trusted third-party services, specifically <strong>Google Firebase and Firestore</strong>, for secure authentication and database hosting. These services adhere to strict security and privacy standards.</li>
+                <li><strong>Legal Requirements:</strong> We may disclose your information if required to do so by law or in response to valid requests by public authorities.</li>
+            </ul>
+
+            <h2>5. Data Security</h2>
+            <p>The security of your data is paramount. We implement industry-standard security measures to protect your information:</p>
+            <ul>
+                <li><strong>Encryption:</strong> Your password and authentication data are encrypted and handled securely via Firebase Authentication.</li>
+                <li><strong>Access Control:</strong> Strict Firestore security rules ensure that your data is only accessible to authorized members of your specific Kamiti groups.</li>
+            </ul>
+            <p>However, please remember that no method of transmission over the internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+
+            <h2>6. Data Retention and Deletion</h2>
+            <p>We retain your personal information only for as long as is necessary for the purposes set out in this Privacy Policy. Your payment participation history within a Kamiti group may be retained as a historical record for fairness, even if you leave the group.</p>
+            
+            <h3>Your Right to Delete Data</h3>
+            <p>You have the right to request the deletion of your account and personal data. To delete your data:</p>
+            <ul>
+                <li>You can contact our support team using the information provided below.</li>
+                <li>Group administrators have the ability to permanently delete Kamiti groups, which cascades to delete all associated round and historical data for that group.</li>
+            </ul>
+
+            <h2>7. Children's Privacy</h2>
+            <p>Our App does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with Personal Data, please contact us so that we can take necessary actions.</p>
+
+            <h2>8. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+            <div class="contact-section">
+                <h3>9. Contact Us</h3>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
+                <a href="mailto:info@jabirulabs.com" class="contact-email">info@jabirulabs.com</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Jabiru Labs. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
